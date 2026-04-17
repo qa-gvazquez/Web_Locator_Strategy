@@ -30,3 +30,12 @@
 - input
 - label
 - button
+
+## DOM
+
+- Node
+- Elements
+- Attributes
+- Child
+- Parent
+- Text Node

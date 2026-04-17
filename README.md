@@ -43,9 +43,17 @@ This **minimizes** test failures (**flakiness**) during UI changes.
   8. CSS
   9. JavaScript Executor
 
+---
+
+WebElement - INPUT
+
+![alt text](image-1.png)
+
   ```html
   <input type="text" name="username" id="username">  
   ```
+
+---
 
 - Wheb basic locators fail.
   - Dynamic or missing ID.
@@ -114,6 +122,73 @@ This **minimizes** test failures (**flakiness**) during UI changes.
   ```
 
 - Finalmente, damos ENTER y desde la consola de los DevTools, podemos hacer todo.
+
+</details>
+
+<details>
+<summary> Sección 3: XPath Fundamentals (8) </summary>
+
+- [x] 8. Introduction to Section – XPath Fundamentals
+- Introdcuction to this section
+
+- [x] 9. What is XPath?
+- XML Path Language
+- Created to navigate data stored in XML documents.
+
+![alt text](image-2.png)
+
+```css
+/html/body/div/button
+```
+
+- [ ] 10. XPath Terminology
+
+- In XPath, everything inside an HTML document IS treated as a NODE.
+  - Each TAG
+  - Each attribute inside a TAG
+  - Even visible Text between tags
+
+- Types of NODES
+  - Elements (created by an HTML tag)
+    - a (hyperlink)
+    - Input
+    - Button
+  - Attributes (stores extra details inside an element. like ID, Name or Class )
+  - Text (holds the text visible to user between tags, like word SUBMIT inside a button)
+
+![alt text](image-1.png)
+
+  ```html
+  <input type="text" name="username" id="username">  
+  ```
+
+  In this example.
+
+  - Element node = input
+  - Attributes = type, name & id
+
+![alt text](image-3.png)
+
+```html
+<button id="submit" class="btn">Submit</button>
+```
+- Element Node = Button
+- Attributes = id, class
+- Text Node = Submit
+
+---
+
+ PARENT and CHILD
+
+![alt text](image-4.png)
+
+ABSOLUTE PATH
+
+![alt text](image-5.png)
+
+RELATIVE XPATH
+
+![alt text](image-6.png)
 
 </details>
 
