@@ -141,7 +141,7 @@ WebElement - INPUT
 /html/body/div/button
 ```
 
-- [ ] 10. XPath Terminology
+- [x] 10. XPath Terminology
 
 - In XPath, everything inside an HTML document IS treated as a NODE.
   - Each TAG
@@ -182,6 +182,9 @@ WebElement - INPUT
 
 ![alt text](image-4.png)
 
+
+- [x] 11. Absolute vs Relative XPath
+
 ABSOLUTE PATH
 
 ![alt text](image-5.png)
@@ -189,6 +192,28 @@ ABSOLUTE PATH
 RELATIVE XPATH
 
 ![alt text](image-6.png)
+
+- [x] 12. XPath Syntax and Attributes
+
+```html
+// tag[@attribute='value']
+```
+
+```html
+<input type="text" name="username" id="username">
+```
+
+XPATH
+```html
+$x('//input[@id="username"]')
+```
+
+
+```html
+$x('//input[@name="username"]')
+```
+
+
 
 </details>
 
