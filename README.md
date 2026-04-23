@@ -213,7 +213,23 @@ $x('//input[@id="username"]')
 $x('//input[@name="username"]')
 ```
 
+- [x] 13. Understanding /, //, ./, .//
+  - **/**  - Start from the ROOT of the document
+    - ```html
+      $x("/html/body/div[1]/div/section/section/h2")
+      ```
+  - **//** - Start from ANYWHERE in the document
+    - ```html
+      $x("//h2")
+      ```
+  - **./** - start from this element itself
+  - **.//** - search anywhere inside this element's children.
+    - This is very useful in automated tests when you want to limit your search to a specific containter such as
+      - form
+      - table row
+      - section
 
+> Me quedé en **3:00**
 
 </details>
 
